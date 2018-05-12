@@ -1,2 +1,3 @@
 # FisherMan
 FisherMan
+project init
