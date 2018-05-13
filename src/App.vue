@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-      <home></home>
+      <splash></splash>
   </div>
 </template>
 <script>
-import Home from '@/pages/home/Home.vue'
+import Splash from '@/pages/Splash'
 export default {
   name: 'App',
   components:{
-    Home
+    Splash
   }
 }
 </script>
