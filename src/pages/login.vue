@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-      登录
+      我是登录页面
   </div>
 </template>
 <script>

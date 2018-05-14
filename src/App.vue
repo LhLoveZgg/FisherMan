@@ -1,15 +1,11 @@
 <template>
   <div id="app">
-      <splash></splash>
+      <router-view></router-view>
   </div>
 </template>
 <script>
-import Splash from '@/pages/Splash'
 export default {
-  name: 'App',
-  components:{
-    Splash
-  }
+  name: 'App'
 }
 </script>
 
