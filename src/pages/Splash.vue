@@ -4,13 +4,16 @@
      <div class="version">
          <p> 
              <span>
-                 <i>FisherMan</i>
+                 <i><i class="iconfont">&nbsp;&#xe73b;</i>FisherMan</i>
             </span>
          </p>   
          <!-- <p>©Google Inc.</p> -->
           <p>©上海赞同科技有限公司</p>
      </div>
-     <!-- <video src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop></video> -->
+     <video class="bg-music" src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop></video>
+     <div class="control-music">
+            <i class="iconfont">&#xe61c;</i>
+     </div>
   </div>
 </template>
 <script>
@@ -64,4 +67,14 @@ export default {
                 text-align :center;
                 color:#fff;
               font-size:1.2rem;
+        .bg-music
+           position:absolute;
+           width:0;
+           height:0;
+           top:0;
+           left:0;
+        .control-music
+            position:absolute;
+            top:1rem;
+            right:1rem;   
 </style>
