@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/styles/reset.css'//清除浏览器渲染的样式差异
+import './assets/styles/iconfont.css'
 import fastClick from 'fastclick'
 Vue.config.productionTip = false
 fastClick.attach(document.body)
