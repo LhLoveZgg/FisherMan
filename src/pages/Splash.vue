@@ -49,7 +49,7 @@ export default {
               document.getElementsByClassName("splash")[0].style.height = this.getViewportSize().height+"px";
         })
         setTimeout(()=>{
-             this.$router.push("login");
+            this.$router.push("login");
         },3000)
     }
   }
