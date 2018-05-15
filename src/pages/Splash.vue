@@ -10,8 +10,8 @@
          <!-- <p>©Google Inc.</p> -->
           <p>©上海赞同科技有限公司</p>
      </div>
-     <video class="bg-music" src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop></video>
-     <div class="control-music">
+     <video class="bg-music" src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop :status="status"></video>
+     <div class="control-music" @click="controlMusic">
             <i class="iconfont">&#xe61c;</i>
      </div>
   </div>
@@ -21,7 +21,7 @@ export default {
     name: 'splash',
     data(){
         return {
-
+            status:true
         }
     },
     methods:{
@@ -30,6 +30,17 @@ export default {
                     width :  window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
                     height : window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight   
                 }    
+        },
+        controlMusic(event){
+            if(this.status){
+                document.getElementsByClassName("bg-music")[0].pause();
+                this.status = false;
+            }
+            else{
+                  document.getElementsByClassName("bg-music")[0].play();
+                  this.status = true;
+            }
+           
         }
     }, 
     mounted(){
@@ -38,7 +49,7 @@ export default {
               document.getElementsByClassName("splash")[0].style.height = this.getViewportSize().height+"px";
         })
         setTimeout(()=>{
-            //  this.$router.push("login");
+             this.$router.push("login");
         },3000)
     }
   }
