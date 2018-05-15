@@ -10,7 +10,7 @@
          <!-- <p>©Google Inc.</p> -->
           <p>©上海赞同科技有限公司</p>
      </div>
-     <video src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop></video>
+     <!-- <video src="http://112.65.118.10/mp32.9ku.com/upload/2014/04/24/837689.mp3" autoplay loop></video> -->
   </div>
 </template>
 <script>
